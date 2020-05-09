@@ -1,0 +1,31 @@
+{
+  "name": "immobilier-togo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \" cd ./client && npm start\"",
+    "postinstall": "cd client && npm install && npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TAYLOR-YAO/immobilier-togo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TAYLOR-YAO/immobilier-togo/issues"
+  },
+  "homepage": "https://github.com/TAYLOR-YAO/immobilier-togo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.13",
+    "nodemon": "^2.0.3",
+    "path": "^0.12.7"
+  }
+}
