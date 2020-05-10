@@ -1,7 +1,7 @@
 //  Node packages
 const express = require("express");
 const bodyParser = require("body-parser");
-// const apiRoutes = require("./routes/api-routes");
+const registerHouses = require("./routes/api-register-houses");
 // const eventRoutes = require("./routes/event-routes");
 const path = require("path");
 //  =================================================
@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/immobiliers', (
     console.log("Succesfuly Connected to MongoDB")
 });
 
-// app.use("/api",apiRoutes);
+app.use("/api",registerHouses);
 // app.use("/api", eventRoutes);
 
 app.get("*", (req, res)=>{
