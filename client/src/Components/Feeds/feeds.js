@@ -72,9 +72,9 @@ let aventages = [
     { value: "Securité", label: "Securité"}
 ]
 let services = [
-    { value: "A vente", label: "A vente" },
-    { value: 'A louer', label: 'A louer' },
-    { value: 'A bailler', label: 'A bailler' }
+    { value: "Vente", label: "Vente" },
+    { value: 'Louer', label: 'Louer' },
+    { value: 'Baille', label: 'Baille' }
 ]
 
 module.exports = {

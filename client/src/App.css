@@ -12,5 +12,25 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html {
+position: relative;
+min-height: 100%;
+}
+body {
+margin: 0 0 100px; 
+font-family: sans-serif;
+}
+.content { 
+padding: 15px; 
+box-sizing: border-box;
+text-align: center;
+}
+
+
+.footer {
+  background-color: #4682B4 !important;
+  color: #ffffff;
+}
+
 
 

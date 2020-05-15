@@ -12,11 +12,11 @@ class Navigations extends Component {
   render() {
     return <div>
 
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Navbar.Brand href="#home">
+<Navbar collapseOnSelect expand="lg" bg="success" variant="dark" className="navbar navbar-fixed-top">
+    <Navbar.Brand href="/node_modules">
         <img src={logo} className="App-logo" alt="logo" style={{float:"left"}} />  
     </Navbar.Brand>
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="/">
         <h4>Immo-Togo  </h4>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -31,7 +31,7 @@ class Navigations extends Component {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Annonce et location</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#deets">Contactez Nous</Nav.Link>
+            <Nav.Link href="/">Contactez Nous</Nav.Link>
             <Nav.Link href="poster-immobiliers">Poste ta maision</Nav.Link>
             <NavDropdown title="Mon Compte" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Modifier</NavDropdown.Item>
@@ -43,7 +43,6 @@ class Navigations extends Component {
         </Nav>
     </Navbar.Collapse>
 </Navbar>
-
        
     </div>
     

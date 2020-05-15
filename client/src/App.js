@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Router/>   
+      <Router/>
+      <div className="footer fixed-bottom">
+        <p>Footer</p>
+      </div>
     </div>
   );
 }

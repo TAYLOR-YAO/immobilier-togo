@@ -9,11 +9,22 @@ class Example extends Component {
       activePage: 1,
       secondPage: false
     };
+
+    // componentDidMount(){
+    //     if (this.state.activePage === 2){
+    //         this.setState({secondPage:true})
+    //       }
+          
+
+    // }
  
-    handlePageChange=(pageNumber)=>{
-        console.log(`active page is ${pageNumber}`);
-        this.setState({activePage: pageNumber});
-    }
+  handlePageChange=(pageNumber)=>{
+    console.log(`active page is ${pageNumber}`);
+    this.setState({activePage: pageNumber});
+    // if (this.state.activePage = 2){
+    //     this.setState({secondPage:true})
+    //   }
+  }
  
   render() {
     // const [secondPage] = this.state;
