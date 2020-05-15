@@ -65,27 +65,23 @@ class RegisterHouse extends Component {
         secondPage: false
     };
 
-    // ================================TEXT Editore=================================================
-    updateContent(newContent) {
-        this.setState({
+    componentDidMount=()=>{
+        this.updateContent=(newContent) =>{
+            this.setState({
+                descriptions: newContent
+            })
+        }
+    
+        this.onEditorChange=(event)=>{
+          console.log("onChange fired with event info: ", event);
+          var newContent = event.editor.getData();
+          this.setState({
             descriptions: newContent
-        })
+          })
+        }
     }
-    // onBlur(evt){
-    //     console.log("onBlur event called with event info: ", evt);
-    //   }
-      
-    //   afterPaste(evt){
-    //     console.log("afterPaste event called with event info: ", evt);
-    //   }
+    // ================================TEXT Editore=================================================
 
-    onEditorChange=(event)=>{
-      console.log("onChange fired with event info: ", event);
-      var newContent = event.editor.getData();
-      this.setState({
-        descriptions: newContent
-      })
-    }
     // ===================================Page change==========================
     handlePageChange=(pageNumber)=>{
         // console.log(`active page is ${pageNumber}`);
@@ -334,11 +330,11 @@ class RegisterHouse extends Component {
                                 <Row>
                                     <Col sm={12}>
                                         <CKEditor 
-                                            activeClass="p10" 
+                                            activeClass="p5" 
                                             content={this.state.descriptions} 
                                             events={{
-                                                // "blur": this.onBlur,
-                                                // "afterPaste": this.afterPaste,
+                                                "blur": this.onBlur,
+                                                "afterPaste": this.afterPaste,
                                                 "change": this.onEditorChange
                                             }}
                                         />

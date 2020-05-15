@@ -280,7 +280,7 @@ render() {
                                      
                                     </Modal.Title>
                                   </Modal.Header>
-                                  <Modal.Body className="py-0 border"  style={{height:"60%", overflow:"scroll !inportant"}}>
+                                  <Modal.Body className="py-0 border"  style={{height:"80%", overflow:"scroll"}}>
                                     {/*=====================Modal Body====================== */}
                                     <p><strong>Type de cours:</strong> {immobilier.cours ? ` ${immobilier.cours}` : ""}</p> 
                                     <p><strong>Offre:</strong> {immobilier.services ? ` ${immobilier.services}` : ""}</p>                                                          

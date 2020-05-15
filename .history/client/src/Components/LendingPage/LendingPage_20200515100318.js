@@ -273,14 +273,14 @@ render() {
                                         <Col sm={2}>
                                         <div className="py-1 d-flex justify-content-center">
                                         <Button
-                                          variant="outline-dark" onClick={() => this.setState({ show: false })}>Fermer</Button>
+                                          variant="outline-dark" style={{float:"right"}}onClick={() => this.setState({ show: false })}>Fermer</Button>
                                       </div>
                                         </Col>
                                       </Row>
                                      
                                     </Modal.Title>
                                   </Modal.Header>
-                                  <Modal.Body className="py-0 border"  style={{height:"60%", overflow:"scroll !inportant"}}>
+                                  <Modal.Body className="py-0 border">
                                     {/*=====================Modal Body====================== */}
                                     <p><strong>Type de cours:</strong> {immobilier.cours ? ` ${immobilier.cours}` : ""}</p> 
                                     <p><strong>Offre:</strong> {immobilier.services ? ` ${immobilier.services}` : ""}</p>                                                          
@@ -302,6 +302,9 @@ render() {
                                         <Button
                                           variant="outline-dark" onClick={() => this.setState({ show: false })}>Fermer</Button>
                                       </div>
+                                      {/* <div>
+                                        <Button variant="outline-danger" className="mx-2 px-3">Delete</Button>
+                                      </div> */}
                                     </Modal.Footer>
                                 </Modal>
                               </Col>

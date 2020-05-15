@@ -337,8 +337,6 @@ class RegisterHouse extends Component {
                                             activeClass="p10" 
                                             content={this.state.descriptions} 
                                             events={{
-                                                // "blur": this.onBlur,
-                                                // "afterPaste": this.afterPaste,
                                                 "change": this.onEditorChange
                                             }}
                                         />

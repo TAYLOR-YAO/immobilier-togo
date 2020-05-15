@@ -71,13 +71,13 @@ class RegisterHouse extends Component {
             descriptions: newContent
         })
     }
-    // onBlur(evt){
-    //     console.log("onBlur event called with event info: ", evt);
-    //   }
+    onBlur(evt){
+        console.log("onBlur event called with event info: ", evt);
+      }
       
-    //   afterPaste(evt){
-    //     console.log("afterPaste event called with event info: ", evt);
-    //   }
+      afterPaste(evt){
+        console.log("afterPaste event called with event info: ", evt);
+      }
 
     onEditorChange=(event)=>{
       console.log("onChange fired with event info: ", event);
@@ -337,8 +337,8 @@ class RegisterHouse extends Component {
                                             activeClass="p10" 
                                             content={this.state.descriptions} 
                                             events={{
-                                                // "blur": this.onBlur,
-                                                // "afterPaste": this.afterPaste,
+                                                "blur": this.onBlur,
+                                                "afterPaste": this.afterPaste,
                                                 "change": this.onEditorChange
                                             }}
                                         />

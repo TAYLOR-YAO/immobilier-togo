@@ -267,10 +267,10 @@ render() {
                                   <Modal.Header className="bg-danger text-white text-center py-1" id="mondal-header">
                                     <Modal.Title className="text-center">
                                       <Row>
-                                      <Col sm={10}>
+                                      <Col sm={9}>
                                         <h5 style={{marginTop:"10px"}}>Plus De Detailles A Lire</h5>
                                       </Col>
-                                        <Col sm={2}>
+                                        <Col sm={3}>
                                         <div className="py-1 d-flex justify-content-center">
                                         <Button
                                           variant="outline-dark" onClick={() => this.setState({ show: false })}>Fermer</Button>
@@ -280,7 +280,7 @@ render() {
                                      
                                     </Modal.Title>
                                   </Modal.Header>
-                                  <Modal.Body className="py-0 border"  style={{height:"60%", overflow:"scroll !inportant"}}>
+                                  <Modal.Body className="py-0 border">
                                     {/*=====================Modal Body====================== */}
                                     <p><strong>Type de cours:</strong> {immobilier.cours ? ` ${immobilier.cours}` : ""}</p> 
                                     <p><strong>Offre:</strong> {immobilier.services ? ` ${immobilier.services}` : ""}</p>                                                          
@@ -302,6 +302,9 @@ render() {
                                         <Button
                                           variant="outline-dark" onClick={() => this.setState({ show: false })}>Fermer</Button>
                                       </div>
+                                      {/* <div>
+                                        <Button variant="outline-danger" className="mx-2 px-3">Delete</Button>
+                                      </div> */}
                                     </Modal.Footer>
                                 </Modal>
                               </Col>

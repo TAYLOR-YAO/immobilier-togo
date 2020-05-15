@@ -262,6 +262,7 @@ render() {
                                 </Button>
                                 <Modal
                                   show={this.state.show}
+                                  style={{height:"80%", overflow:"scroll"}}
                                   animation={true}
                                   size="md" className="hadow-lg border">
                                   <Modal.Header className="bg-danger text-white text-center py-1" id="mondal-header">
@@ -280,7 +281,7 @@ render() {
                                      
                                     </Modal.Title>
                                   </Modal.Header>
-                                  <Modal.Body className="py-0 border"  style={{height:"60%", overflow:"scroll !inportant"}}>
+                                  <Modal.Body className="py-0 border">
                                     {/*=====================Modal Body====================== */}
                                     <p><strong>Type de cours:</strong> {immobilier.cours ? ` ${immobilier.cours}` : ""}</p> 
                                     <p><strong>Offre:</strong> {immobilier.services ? ` ${immobilier.services}` : ""}</p>                                                          
