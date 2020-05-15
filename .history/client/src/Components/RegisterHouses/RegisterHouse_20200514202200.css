@@ -1,0 +1,101 @@
+.posteTitre{
+    text-align: center !important;
+}
+
+.button {
+    position: relative;
+    background-color: #4682B4;
+    ;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #4682B4;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #root > div > div:nth-child(2) > div:nth-child(3) > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  #root > div > div:nth-child(2) > div:nth-child(3) > ul > li{
+    border: 3px solid #4682B4;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 0 15px;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    margin-top: -20px;
+    text-decoration: none !important;
+    clear: both;
+  }
+  
+  #root > div > div:nth-child(2) > div:nth-child(3) > ul > li:hover{
+      background-color: #363a36;
+  }
+  #root > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(2){
+    display: none;
+  }
+  #root > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(5){
+    display: none;
+  }
+
+  #root > div > div.container > div:nth-child(1) > div.row > div:nth-child(1) > div > div > div > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > div > input[type=text]{
+    width: 7.5em;
+  }
+

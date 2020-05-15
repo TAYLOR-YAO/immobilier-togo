@@ -1,0 +1,16 @@
+
+
+.housepics{
+    max-width: 80% !important;
+    margin: auto;
+
+}
+
+#root > div > div:nth-child(2) > div > div.row > div.col-sm-3 > div:nth-child(3) > div:nth-child(1) > div > div{
+    background-color:green !important;
+    height: 20px !important;
+}
+#root > div > div:nth-child(2) > div > div.row > div.col-sm-9 > div > div > div > div > div > div > div.col-sm-8 > div > div > div.housepics.card-body > div > div:nth-child(2) > div > ul{
+    margin-bottom: -5px !important;
+    padding-bottom: -10px;
+} 
